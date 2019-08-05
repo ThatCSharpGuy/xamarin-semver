@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace XamarinSemVer
 {
@@ -9,7 +8,7 @@ namespace XamarinSemVer
         public App()
         {
             InitializeComponent();
-
+            VersionTracking.Track();
             MainPage = new MainPage();
         }
 
